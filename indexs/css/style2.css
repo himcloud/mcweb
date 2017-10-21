@@ -1,0 +1,752 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/* start editing from here */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0;padding:0;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+/*--login form start here--*/ 
+body {background-image: url(/public/img/image.jpg);}
+h1 {
+  font-size: 34px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin: 0px 0px 25px 0px;
+}
+.login {
+  width: 33%;
+  margin: 0 auto;
+  background: #F8F8F8;
+  border-radius: 4px;
+}
+.login-top{
+  background: #E9E9E9;
+  border-radius: 4px 4px 0px 0px;
+  padding: 11px 0px;
+  text-align: center;
+}
+.login-top h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #7A7A7A;
+}
+.login-top h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #7A7A7A;
+}
+span.log {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+}
+.login-bottom {
+  padding: 23px 23px 23px 23px;
+}
+.login-bottom h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #737373;
+  margin: 10px 0px 10px 0px;
+}
+.login-bottom ul  {
+	border-bottom:3px solid #EFEDED;
+	  padding: 0 0 1.5em;
+}
+.login-bottom ul li {
+  display: inline-block;
+  width:49%;
+  margin-right:2%;
+  float: left;
+}
+.login-bottom ul li:nth-child(2) {
+  margin-right:0%;
+}
+.login-bottom ul li a {
+  font-size: 17.5px;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 5px;
+}
+.login-bottom ul li a.tw {
+  background: url(../images/twitter.png)no-repeat 10px 8px #44ccf6;
+  display: inline-block;
+  padding: 10px 14px 10px 56px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.login-bottom ul li a.fa {
+  background: url(../images/face.png)no-repeat 10px 8px #4C71AB;
+  display: inline-block;
+  padding: 10px 14px 10px 59px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+
+.login-bottom ul li a.tw:hover {
+  background: url(../images/twitter.png)no-repeat 10px 8px #4AB2D2;
+  
+  transition:  0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-moz-transition:  0.5s all;
+	-webkit-transition: 0.5s all;
+}
+.login-bottom ul li a.fa:hover {
+  background: url(../images/face.png)no-repeat 10px 8px #1D375F;
+  transition:  0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-moz-transition:  0.5s all;
+	-webkit-transition: 0.5s all;
+}
+
+.user,.user-in{
+ border: 1px solid #EDEDED;
+  border-top: 2px solid #EDEDED;
+  background:#fff;
+   border-radius: 5px;
+    margin-bottom: 1em;
+}
+.user input[type="text"],.user-in input[type="password"] {
+  background: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #BBBBBB;
+  padding: 17px 15px 17px 15px;
+  border: none;
+  width: 85%;
+ 
+  -webkit-appearance: none;
+}
+.user i {
+  background: url(../images/user.png)no-repeat 0px 0px ;
+  width: 27px;
+  height: 27px;
+  display:inline-block;
+    vertical-align: middle;
+}
+.user-in i {
+  background: url(../images/key.png)no-repeat 0px 7px ;
+  width: 27px;
+  height: 27px;
+  display:inline-block;
+    vertical-align: middle;
+}
+label.checkbox {
+  float: left;
+}
+.keep-loginbutton {
+  float: right;
+}
+.keepme input[type="checkbox"] {
+  display: none;
+}
+.keepme.checkbox input {
+	position: absolute;
+	left: -9999px;
+}
+.keepme.checkbox i {
+	border-color: #fff;
+	transition: border-color 0.3s;
+	-o-transition: border-color 0.3s;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+	
+}
+.keepme.checkbox i:hover {
+	border-color:red;
+	
+}
+.keepme i:before {
+	background-color: #2da5da;	
+}
+.keepme  .rating label {
+	color: #ccc;
+	transition: color 0.3s;
+	-o-transition: color 0.3s;
+	-ms-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+}
+.keepme .checkbox input + i:after {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.1s;
+	-o-transition: opacity 0.1s;
+	-ms-transition: opacity 0.1s;
+	-moz-transition: opacity 0.1s;
+	-webkit-transition: opacity 0.1s;
+}
+.keepme .checkbox input + i:after {
+	content: url(../images/tick.png) no-repeat 7px 1px;
+	top: 1px;
+	left: 1px;
+	width: 15px;
+	height: 15px;
+}
+.keepme .checkbox {
+	padding: 15px 0px 0px 22px;
+	font-size: 15px;
+   font-weight: 600;
+	line-height: 5px;
+	color:#737373;
+	cursor: pointer;
+	position: relative;
+	display: block;
+	float: left;
+}
+.keepme .checkbox:hover {
+	text-decoration: none;
+}
+.keepme  .checkbox i {
+  position: absolute;
+  top: 9px;
+  left: 0px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  outline: none;
+  border: 1px solid #B3B2B2;
+  border-radius: 4px;
+  background: #fff;
+}
+.keepme  .checkbox input + i:after {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.1s;
+	-o-transition: opacity 0.1s;
+	-ms-transition: opacity 0.1s;
+	-moz-transition: opacity 0.1s;
+	-webkit-transition: opacity 0.1s;
+}
+.keepme .checkbox input + i:after {
+	color: #2da5da;
+}
+.keepme.checkbox input:checked + i,
+.keepme . input:checked + i {
+	border-color: #2da5da;	
+}
+.keepme .rating input:checked ~ label {
+	color: #2da5da;	
+}
+
+.keepme .checkbox input:checked + i:after {
+	opacity: 1;
+}
+.keep-loginbutton input[type="submit"] {
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 600;
+  width: 93%;
+  padding: 8px 26px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 0px 0px 0px 0px;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+ background: #e21b1b; 
+}
+.keep-loginbutton input[type="submit"]:hover {
+ background: #6b6b6b;
+ transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.keepme {
+  padding: 6px 0px;
+  width: 100%;
+}
+.forgot {
+  padding: 15px 0px;
+}
+.forgot p {
+  float: left;
+}
+.forgot p a{
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+.forgot p a:hover{
+	color:#878787;
+	transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.forgot-register {
+  float: right;
+}
+.forgot-register p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #878787;
+}
+.forgot-register p a {
+  color: #000;
+}
+.forgot-register p a:hover {
+  color: #e33838;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+span.login-line {
+  background: #EFEDED;
+  width: 460px;
+  height: 2px;
+  display: block;
+  margin: 20px auto;
+}
+.copyright {
+  padding: 110px 0px 0px 0px;
+  text-align: center;
+}
+.copyright p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+.copyright p a{
+  font-size: 15px;
+  font-weight: 400;
+  color:  #E21B1B;
+}
+.copyright p a:hover{
+	color: #fff;
+	 transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+/*--login form end here--*/
+/*--meadia quiries start here--*/
+@media(max-width:1440px){
+.login {
+  width: 38%;
+}
+
+
+.keep-loginbutton input[type="submit"] {
+  width: 91%;
+}
+}
+@media(max-width:1366px){
+.login {
+  width: 39%;
+}
+
+.login-bottom ul li a.fa {
+  padding: 10px 14px 10px 58px;
+  }
+  .login-bottom ul li a.tw {
+  padding: 10px 14px 10px 55px;
+}
+@media(max-width:1280px){
+.login {
+  width: 40%;
+}
+.login-bottom ul li a {
+  font-size: 17px;
+}
+
+h1 {
+  font-size: 30px;
+}
+body {
+  padding: 30px 0px 30px 0px;
+}
+.copyright {
+  padding: 55px 0px 0px 0px;
+}
+
+.keep-loginbutton input[type="submit"] {
+  width: 96%;
+}
+.login-bottom ul li a.tw {
+  padding: 10px 14px 10px 50px;
+}
+.login-bottom ul li a.fa {
+  padding: 10px 14px 10px 51px;
+  }
+  }
+@media(max-width:1024px){
+.login {
+  width: 50%;
+}
+
+body {
+  padding: 28px 0px 30px 0px;
+}
+h1 {
+  font-size: 30px;
+}
+.login-top h2 {
+  font-size: 24px;
+}
+}
+@media(max-width:768px){
+.login {
+  width: 67%;
+}	
+body {
+  padding: 88px 0px 105px 0px;
+}
+.copyright {
+  padding: 160px 0px 0px 0px;
+}
+}
+@media(max-width:736px){
+span.login-line {
+  width: 410px;	
+}
+.login-bottom ul li a {
+  font-size: 15px;
+}
+
+
+.forgot p a {
+  font-size: 13px;
+}
+.forgot-register p {
+  font-size: 13px;
+}
+}
+@media(max-width:667px){
+span.login-line {
+  width: 390px;
+}
+
+
+.forgot-register p {
+  font-size: 12px;
+}
+.forgot p a {
+  font-size: 12px;
+}
+.login-bottom ul li a {
+  font-size: 14px;
+}
+}
+@media (max-width: 667px){
+.login-bottom ul li a.tw {
+  padding: 10px 14px 10px 46px;
+}
+.login-bottom ul li a.fa {
+  padding: 10px 14px 10px 47px;
+}
+.user input[type="text"], .user-in input[type="password"] {
+  width: 82%;
+}
+}
+@media(max-width:640px){
+.login {
+  width: 80%;
+}	
+.login h2 {
+  font-size: 26px;	
+}
+
+body {
+  padding: 50px 0px 40px 0px;
+}
+
+.copyright {
+  padding: 115px 0px 0px 0px;
+}
+.login-bottom ul li {
+  width: 47.5%;
+  margin-right: 5%;
+}
+.login-bottom ul li a.tw {
+  padding: 10px 27px 10px 57px;
+}
+.login-bottom ul li:nth-child(2) {
+  margin-right: 0%;
+}
+.login-bottom ul li a.fa {
+  padding: 10px 28px 10px 51px;
+}
+}
+
+@media(max-width:600px){
+
+.login-bottom ul li a.tw {
+  padding: 10px 25px 10px 43px;
+}
+
+.login-bottom ul li a.fa {
+  padding: 10px 14px 10px 53px;
+}
+
+}
+
+@media(max-width:568px){
+.login-bottom ul li a.fa {
+  padding: 10px 14px 10px 38px;
+}
+.login-bottom ul li a.tw {
+  padding: 10px 18px 10px 39px;
+}
+
+}
+
+@media(max-width:480px){
+.login-bottom ul li {
+  width: 49%;
+  margin-right: 2%;
+}
+span.login-line {
+  width: 350px;
+}
+
+.login {
+  width: 86%;
+}
+.forgot p a{
+  font-size: 11px;
+}
+.forgot-register p {
+  font-size: 11px;
+  padding: 6px 0px 0px 0px;
+}
+.keep-para .checkbox {
+  font-size: 12px;
+}
+.login-bottom ul li a {
+  font-size: 13px;
+}
+.login-bottom ul li a.fa {
+  margin: 0px 0px 0px 0px;
+}
+
+.login-bottom ul li a.tw {
+  background: url(../images/twitter.png)no-repeat 10px 4px #44ccf6;
+  padding: 10px 14px 10px 37px;
+}
+.login-bottom ul li a.fa {
+  background: url(../images/face.png)no-repeat 11px 5px #4C71AB;
+  padding: 10px 14px 10px 36px;
+}
+.login-bottom ul li a.tw:hover {
+  background: url(../images/twitter.png)no-repeat 10px 4px #4AB2D2;
+
+}
+.login-bottom ul li a.fa:hover {
+  background: url(../images/face.png)no-repeat 11px 5px #1D375F;
+
+}
+h1 {
+  font-size: 27px;
+}
+.keep-loginbutton input[type="submit"] {
+  width: 99%;
+}
+.user input[type="text"], .user-in input[type="password"] {
+  width: 81%;
+}
+}
+
+@media(max-width:414px){
+
+.user input[type="text"], .user-in input[type="password"] {
+  width: 75%;
+}
+.login-bottom ul li a.tw {
+  background: url(../images/twitter.png)no-repeat 36px 8px #44ccf6;
+  padding: 10px 70px 10px 104px;
+  margin: 0em 0em 0.5em 0em;
+}
+.login-bottom ul li a.tw:hover {
+  background: url(../images/twitter.png)no-repeat 36px 8px #4C71AB;
+  
+}
+.login-bottom ul li a.fa {
+  background: url(../images/face.png)no-repeat 36px 5px #4C71AB;
+  padding: 10px 70px 10px 104px;
+}
+.login-bottom ul li a.fa:hover {
+  background: url(../images/face.png)no-repeat 36px 5px  #44ccf6;
+ 
+}
+.forgot p {
+  float: none;
+  text-align: center;
+}
+.forgot-register {
+  float: none;
+}
+.login-bottom ul li {
+  width: 100%;
+  float: none;
+}
+}
+@media(max-width:384px){
+.login-bottom ul li a.tw {
+  padding: 10px 55px 10px 90px;	
+}
+.login-bottom ul li a.tw:hover {
+  padding: 10px 55px 10px 90px;
+}
+.login-bottom ul li a.fa {
+  padding: 10px 55px 10px 90px;
+}
+.login-bottom ul li a.fa:hover {
+  padding: 10px 55px 10px 90px;
+}
+
+span.login-line {
+  width: 268px;
+}
+}
+@media(max-width:375px){
+.login-bottom ul li a.tw {
+  padding: 10px 55px 10px 85px;
+}
+.login-bottom ul li a.tw:hover {
+  padding: 10px 55px 10px 85px;
+}	
+.login-bottom ul li a.fa {
+  padding: 10px 55px 10px 86px;
+}
+.login-bottom ul li a.fa:hover {
+  padding: 10px 55px 10px 86px;
+}
+}
+
+@media(max-width:320px){
+.login {
+  width: 96%;
+}
+span.login-line {
+  width: 240px;
+}
+.login h2 {
+  font-size: 18px;
+}
+span.log {
+  font-size: 14px;
+}
+span.login-line {
+  margin: 10px auto;
+}
+
+.keep-para .checkbox {
+  font-size: 10px;
+}
+.keep-loginbutton input[type="submit"] {
+  font-size: 12px;
+  width: 100%;
+  padding: 6px 15px;
+}
+.forgot-register p {
+ font-size: 12px;
+ padding: 5px 0px 0px 0px;
+}
+.forgot p {
+  float: none;
+  text-align: center;
+}
+.forgot-register {
+  float: none;
+}
+.forgot p a{
+  font-size: 11px;
+}
+.login-bottom h3 {
+  font-size: 11px;
+  margin: 0px 0px 8px 0px;
+}
+.copyright {
+  padding: 25px 0px 0px 0px;
+}
+body {
+  padding: 15px 0px 30px 0px;
+}
+.login-bottom ul li a.tw {
+  background: url(../images/twitter.png)no-repeat 20px 5px #44ccf6;
+  padding: 10px 50px 10px 73px;
+  margin: 0px 0px 8px 0px;
+}
+.login-bottom ul li a.tw:hover {
+  background: url(../images/twitter.png)no-repeat 20px 5px #4C71AB;
+  padding: 10px 50px 10px 73px;
+}
+.login-bottom ul li a.fa {
+  background: url(../images/face.png)no-repeat 15px 5px #4C71AB;
+  padding: 10px 50px 10px 73px;
+}
+.login-bottom ul li a.fa:hover {
+  background: url(../images/face.png)no-repeat 15px 5px #44ccf6;
+  padding: 10px 50px 10px 73px;
+}
+.forgot {
+  padding: 5px 0px;
+}
+.keepme .checkbox {
+  padding: 10px 0px 0px 25px;
+  font-size: 12px;
+}
+.keepme .checkbox i {
+  top: 3px;
+}
+.copyright p {
+  font-size: 13px;
+}
+.copyright p a{
+  font-size: 13px;
+}
+h1 {
+  font-size: 22px;
+  margin: 0px 0px 16px 0px;
+}
+.login-top {
+  padding: 6px 0px;
+}
+.login-bottom ul li {
+  width: 100%;
+  float: none;
+}
+.user input[type="text"], .user-in input[type="password"] {
+  width: 72%;
+    padding: 12px 15px 12px 15px;
+}
+}
+/*--meadia quiries end here--*/
